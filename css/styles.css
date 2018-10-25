@@ -111,16 +111,16 @@ h3 {
   --rhythm: 3rem;
 }
 
-/*h3:before {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 1px;
-    background: var(--border);
-    margin: 0 auto var(--rhythm) auto;
+h3:before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 1px;
+  background: var(--border);
+  margin: 0 auto var(--rhythm) auto;
 }
 
-li {
+/*li {
     --rhythm: 0.5rem;
     margin: 0 0 0 2.5rem;
 }
