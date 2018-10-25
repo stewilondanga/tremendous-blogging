@@ -70,20 +70,11 @@ body>*+* {
   height: 2.5em;
 }
 
-/*.my_social a img {
+.my_social a img {
   height: 1.5em;
 }
 
-
-
-
-
-
-
-
-
-
-h1, h2, h3 {
+/*h1, h2, h3 {
     --heading-min-size: 1.75;
     --heading-max-size: 2;
 
