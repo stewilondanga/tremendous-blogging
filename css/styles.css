@@ -102,12 +102,12 @@ h1:after {
   margin-top: 1rem;
 }
 
-/*h2 {
-    --heading-min-size: 1.8;
-    --rhythm: 4.5rem;
+h2 {
+  --heading-min-size: 1.8;
+  --rhythm: 4.5rem;
 }
 
-h3 {
+/*h3 {
     --rhythm: 3rem;
 }
 
