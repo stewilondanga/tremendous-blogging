@@ -27,15 +27,15 @@ var navigate = (function() {
 
               // Join the words back together
               result = textItems.join(' ');
+
+              // Replace whitespace after no break spaces
+              result = result.replace(/&nbsp; /g, '&nbsp;');
               /*
-                                                                                          	        // Replace whitespace after no break spaces
-                                                                                          	        result = result.replace(/&nbsp; /g, '&nbsp;');
-
-                                                                                          	        // Set the content of the element with our shiny string
-                                                                                          	        elem.innerHTML = result;
-                                                                                          	    });
-                                                                                          	}
+                                                                                                        	        // Set the content of the element with our shiny string
+                                                                                                        	        elem.innerHTML = result;
+                                                                                                        	    });
+                                                                                                        	}
 
 
-                                                                                          	// Run the things!
-                                                                                          	noOrphansPlz();
+                                                                                                        	// Run the things!
+                                                                                                        	noOrphansPlz();
