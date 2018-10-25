@@ -1,3 +1,9 @@
+/* Core styles */
+
+html {
+  font-size: 16px;
+}
+
 /* Global vars */
 
 :root {
@@ -34,6 +40,12 @@ img {
   max-width: 100%;
 }
 
+/* Set siblings to create space with the owl selector */
+
+body>*+* {
+  margin-top: var(--rhythm);
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -63,17 +75,7 @@ img {
 
 
 
-/* Set siblings to create space with the owl selector */
 
-/*body > * + * {
-    margin-top: var(--rhythm);
-}
-
-/* Core styles */
-
-/*html {
-    font-size: 16px;
-}
 
 body {
     padding: 3rem 2rem;
