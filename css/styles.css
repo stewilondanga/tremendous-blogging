@@ -174,11 +174,10 @@ blockquote {
   }
 }
 
-/*@media all and (min-width: 60rem) {
-
-    h1 {
-        font-size: calc(var(--heading-max-size) * 1rem);
-    }
+@media all and (min-width: 60rem) {
+  h1 {
+    font-size: calc(var(--heading-max-size) * 1rem);
+  }
 }
 
 /* Specificity time! */
