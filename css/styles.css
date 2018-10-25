@@ -129,11 +129,11 @@ li+li, li>ul, li>ol {
   margin-top: var(--rhythm);
 }
 
-/*blockquote {
-    border-left: 3px solid var(--border);
-    padding-left: 2rem;
-    font-size: 1.3rem;
-    font-style: italic;
+blockquote {
+  border-left: 3px solid var(--border);
+  padding-left: 2rem;
+  font-size: 1.3rem;
+  font-style: italic;
 }
 
 /* Make selections nice */
