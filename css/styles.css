@@ -138,12 +138,12 @@ blockquote {
 
 /* Make selections nice */
 
-/*::selection {
-    background: var(--highlight);
-    color: var(--background);
+::selection {
+  background: var(--highlight);
+  color: var(--background);
 }
 
-::-moz-selection {
+/*::-moz-selection {
     background: var(--highlight);
     color: var(--background);
 }
