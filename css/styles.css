@@ -168,13 +168,13 @@ blockquote {
     --heading-min-size: 2;
     --heading-max-size: 2.6;
   }
-  /*  h3 {
-        --heading-min-size: 1.8;
-        --heading-max-size: 2.2;
-    }
+  h3 {
+    --heading-min-size: 1.8;
+    --heading-max-size: 2.2;
+  }
 }
 
-@media all and (min-width: 60rem) {
+/*@media all and (min-width: 60rem) {
 
     h1 {
         font-size: calc(var(--heading-max-size) * 1rem);
@@ -182,13 +182,16 @@ blockquote {
 }
 
 /* Specificity time! */
-  /* Set max line lengths */
-  /*p, li {
+
+/* Set max line lengths */
+
+/*p, li {
     max-width: 60ch;
 }
 
 /* An image that directly follows a h2 is our hero image */
-  /*h2 + p {
+
+/*h2 + p {
     --rhythm: 2.2rem;
 
     max-width: unset;
@@ -210,7 +213,8 @@ h2 + p img {
 }
 
 /* Style the datate and author bit */
-  /*h1 + p {
+
+/*h1 + p {
     font-weight: 300;
     line-height: 1.2;
     font-size: 1.4rem;
