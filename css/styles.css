@@ -203,11 +203,11 @@ h2+p img {
   box-shadow: 0 0 3.75rem rgba(0, 0, 0, 0.1);
 }
 
-/*@supports(object-fit: cover) {
-    h2 + p img {
-        max-height: 20rem;
-        object-fit: cover;
-    }
+@supports(object-fit: cover) {
+  h2+p img {
+    max-height: 20rem;
+    object-fit: cover;
+  }
 }
 
 /* Style the datate and author bit */
