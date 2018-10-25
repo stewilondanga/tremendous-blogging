@@ -223,11 +223,11 @@ h1+p strong {
   font-weight: inherit;
 }
 
-/*h1 + p em {
-    font-style: normal;
+h1+p em {
+  font-style: normal;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
