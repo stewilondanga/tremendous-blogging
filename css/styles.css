@@ -21,6 +21,225 @@ body {
   height: 1.5em;
 }
 
+/* Global vars */
+:root {
+    /* Metrics */
+    --rhythm: 1.5rem;
+    --fluid-type-min-screen-width: 40; /* rems */
+    --fluid-type-max-screen-width: 60; /* rems */
+
+    /* Colors */
+    --background: #304682;
+    --text: #f1faee;
+    --text--secondary: #d8efef;
+    --border: #e63946;
+    --highlight: rgba(254, 206, 233, 0.99);
+}
+
+/* Mini reset */
+
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, p, blockquote, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Set siblings to create space with the owl selector */
+body > * + * {
+    margin-top: var(--rhythm);
+}
+
+/* Core styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 3rem 2rem;
+    width: 100%;
+    max-width: 60rem;
+    overflow-x: hidden;
+    margin: 0 auto;
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    background: var(--background);
+    color: var(--text);
+}
+
+h1, h2, h3 {
+    --heading-min-size: 1.75;
+    --heading-max-size: 2;
+
+    font-size: calc(var(--heading-min-size) * 1rem);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05rem;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+h1 {
+    --heading-min-size: 2.5;
+
+    font-weight: 900;
+    line-height: 1.02;
+    display: inline-block;
+    max-width: 15ch; /* I know, I'm cheating ;) */
+}
+
+h1:after {
+    content: "";
+    display: block;
+    max-width: 80%;
+    height: 3px;
+    background: var(--border);
+    margin-top: 1rem;
+}
+
+h2 {
+    --heading-min-size: 1.8;
+    --rhythm: 4.5rem;
+}
+
+h3 {
+    --rhythm: 3rem;
+}
+
+
+h3:before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: var(--border);
+    margin: 0 auto var(--rhythm) auto;
+}
+
+li {
+    --rhythm: 0.5rem;
+    margin: 0 0 0 2.5rem;
+}
+
+li + li,
+li > ul,
+li > ol {
+    margin-top: var(--rhythm);
+}
+
+blockquote {
+    border-left: 3px solid var(--border);
+    padding-left: 2rem;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+/* Make selections nice */
+::selection {
+    background: var(--highlight);
+    color: var(--background);
+}
+
+::-moz-selection {
+    background: var(--highlight);
+    color: var(--background);
+}
+
+
+/* General responsive adjustments */
+@media all and (min-width: 40rem) {
+
+    h1, h2, h3 {
+
+        /* Look, Ma: fluid type with vanilla CSS 😱*/
+        /* Note for those interested. I multiply by 1rem to essentially stick a rem unit to a number.
+        A bit hacky, but I'm trying to emulate what I would do with this #{} in Sass  */
+        font-size: calc(
+            (var(--heading-min-size) * 1rem) + (var(--heading-max-size) - var(--heading-min-size)) /* min font size + (max font size - min font size) */
+            * (100vw - (var(--fluid-type-min-screen-width) * 1rem)) /* multipled by (screen width - min screen width) */
+            / (var(--fluid-type-max-screen-width) - var(--fluid-type-min-screen-width)) /* divided by (max screen width - min screen width) */
+        );
+    }
+
+    h1 {
+        --heading-min-size: 2.5;
+        --heading-max-size: 5;
+    }
+
+    h2 {
+        --heading-min-size: 2;
+        --heading-max-size: 2.6;
+    }
+
+    h3 {
+        --heading-min-size: 1.8;
+        --heading-max-size: 2.2;
+    }
+}
+
+@media all and (min-width: 60rem) {
+
+    h1 {
+        font-size: calc(var(--heading-max-size) * 1rem);
+    }
+}
+
+/* Specificity time! */
+
+/* Set max line lengths */
+p, li {
+    max-width: 60ch;
+}
+
+/* An image that directly follows a h2 is our hero image */
+h2 + p {
+    --rhythm: 2.2rem;
+
+    max-width: unset;
+}
+
+h2 + p img {
+    width: 100vw;
+    max-width: none;
+    margin: 0 0 0 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 3.75rem rgba(0, 0, 0, 0.1);
+}
+
+@supports(object-fit: cover) {
+    h2 + p img {
+        max-height: 20rem;
+        object-fit: cover;
+    }
+}
+
+/* Style the datate and author bit */
+h1 + p {
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.4rem;
+    color: var(--text--secondary);
+}
+
+h1 + p strong {
+    font-weight: inherit;
+}
+
+h1 + p em {
+    font-style: normal;
+}
+
 .containers {
   width: 520px;
   margin: 20px auto;
