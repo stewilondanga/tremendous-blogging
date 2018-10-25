@@ -15,6 +15,12 @@
   --highlight: rgba(254, 206, 233, 0.99);
 }
 
+/* Mini reset */
+
+* {
+  box-sizing: border-box;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -39,12 +45,6 @@
 }
 
 
-/* Mini reset */
-
-/*
-* {
-    box-sizing: border-box;
-}
 
 *:before, *:after {
     box-sizing: inherit;
