@@ -195,15 +195,15 @@ h2+p {
   max-width: unset;
 }
 
-/*h2 + p img {
-    width: 100vw;
-    max-width: none;
-    margin: 0 0 0 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 0 3.75rem rgba(0, 0, 0, 0.1);
+h2+p img {
+  width: 100vw;
+  max-width: none;
+  margin: 0 0 0 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 3.75rem rgba(0, 0, 0, 0.1);
 }
 
-@supports(object-fit: cover) {
+/*@supports(object-fit: cover) {
     h2 + p img {
         max-height: 20rem;
         object-fit: cover;
