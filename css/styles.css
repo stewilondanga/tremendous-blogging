@@ -5,7 +5,8 @@
   --rhythm: 1.5rem;
   --fluid-type-min-screen-width: 40;
   /* rems */
-  /*--fluid-type-max-screen-width: 60; /* rems */
+  --fluid-type-max-screen-width: 60;
+  /* rems */
   /* Colors */
   /*  --background: #304682;
     --text: #f1faee;
