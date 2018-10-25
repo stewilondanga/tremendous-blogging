@@ -74,18 +74,17 @@ body>*+* {
   height: 1.5em;
 }
 
-/*h1, h2, h3 {
-    --heading-min-size: 1.75;
-    --heading-max-size: 2;
-
-    font-size: calc(var(--heading-min-size) * 1rem);
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.05rem;
-    line-height: 1.1;
-    font-weight: 700;
+h1, h2, h3 {
+  --heading-min-size: 1.75;
+  --heading-max-size: 2;
+  font-size: calc(var(--heading-min-size) * 1rem);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05rem;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
-h1 {
+/*h1 {
     --heading-min-size: 2.5;
 
     font-weight: 900;
