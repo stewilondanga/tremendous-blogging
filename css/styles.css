@@ -160,12 +160,11 @@ blockquote {
     (var(--fluid-type-max-screen-width) - var(--fluid-type-min-screen-width))/* divided by (max screen width - min screen width) */
     );
   }
-  /*h1 {
-        --heading-min-size: 2.5;
-        --heading-max-size: 5;
-    }
-
-    h2 {
+  h1 {
+    --heading-min-size: 2.5;
+    --heading-max-size: 5;
+  }
+  /*h2 {
         --heading-min-size: 2;
         --heading-max-size: 2.6;
     }
