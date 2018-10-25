@@ -212,14 +212,14 @@ h2+p img {
 
 /* Style the datate and author bit */
 
-/*h1 + p {
-    font-weight: 300;
-    line-height: 1.2;
-    font-size: 1.4rem;
-    color: var(--text--secondary);
+h1+p {
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 1.4rem;
+  color: var(--text--secondary);
 }
 
-h1 + p strong {
+/*h1 + p strong {
     font-weight: inherit;
 }
 
