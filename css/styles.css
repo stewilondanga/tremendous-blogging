@@ -190,13 +190,12 @@ p, li {
 
 /* An image that directly follows a h2 is our hero image */
 
-/*h2 + p {
-    --rhythm: 2.2rem;
-
-    max-width: unset;
+h2+p {
+  --rhythm: 2.2rem;
+  max-width: unset;
 }
 
-h2 + p img {
+/*h2 + p img {
     width: 100vw;
     max-width: none;
     margin: 0 0 0 50%;
