@@ -107,12 +107,11 @@ h2 {
   --rhythm: 4.5rem;
 }
 
-/*h3 {
-    --rhythm: 3rem;
+h3 {
+  --rhythm: 3rem;
 }
 
-
-h3:before {
+/*h3:before {
     content: "";
     display: block;
     width: 200px;
