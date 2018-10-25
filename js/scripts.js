@@ -35,7 +35,7 @@ var navigate = (function() {
           elem.innerHTML = result;
         });
       }
-      /*
 
-                                                                                                              	// Run the things!
-                                                                                                              	noOrphansPlz();
+
+      // Run the things!
+      noOrphansPlz();
