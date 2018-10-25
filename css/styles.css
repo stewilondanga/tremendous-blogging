@@ -184,8 +184,8 @@ blockquote {
 
 /* Set max line lengths */
 
-/*p, li {
-    max-width: 60ch;
+p, li {
+  max-width: 60ch;
 }
 
 /* An image that directly follows a h2 is our hero image */
