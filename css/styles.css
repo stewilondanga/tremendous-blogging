@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -22,14 +22,14 @@ body {
 }
 
 /* Global vars */
-:root {
+/*:root {
     /* Metrics */
-    --rhythm: 1.5rem;
+  /*  --rhythm: 1.5rem;
     --fluid-type-min-screen-width: 40; /* rems */
-    --fluid-type-max-screen-width: 60; /* rems */
+    /*--fluid-type-max-screen-width: 60; /* rems */
 
     /* Colors */
-    --background: #304682;
+  /*  --background: #304682;
     --text: #f1faee;
     --text--secondary: #d8efef;
     --border: #e63946;
@@ -37,7 +37,7 @@ body {
 }
 
 /* Mini reset */
-
+/*
 * {
     box-sizing: border-box;
 }
@@ -57,12 +57,12 @@ img {
 
 
 /* Set siblings to create space with the owl selector */
-body > * + * {
+/*body > * + * {
     margin-top: var(--rhythm);
 }
 
 /* Core styles */
-html {
+/*html {
     font-size: 16px;
 }
 
@@ -97,7 +97,7 @@ h1 {
     line-height: 1.02;
     display: inline-block;
     max-width: 15ch; /* I know, I'm cheating ;) */
-}
+/*}
 
 h1:after {
     content: "";
@@ -146,7 +146,7 @@ blockquote {
 }
 
 /* Make selections nice */
-::selection {
+/*::selection {
     background: var(--highlight);
     color: var(--background);
 }
@@ -158,18 +158,18 @@ blockquote {
 
 
 /* General responsive adjustments */
-@media all and (min-width: 40rem) {
+/*@media all and (min-width: 40rem) {
 
     h1, h2, h3 {
 
         /* Look, Ma: fluid type with vanilla CSS 😱*/
         /* Note for those interested. I multiply by 1rem to essentially stick a rem unit to a number.
         A bit hacky, but I'm trying to emulate what I would do with this #{} in Sass  */
-        font-size: calc(
+  /*      font-size: calc(
             (var(--heading-min-size) * 1rem) + (var(--heading-max-size) - var(--heading-min-size)) /* min font size + (max font size - min font size) */
-            * (100vw - (var(--fluid-type-min-screen-width) * 1rem)) /* multipled by (screen width - min screen width) */
-            / (var(--fluid-type-max-screen-width) - var(--fluid-type-min-screen-width)) /* divided by (max screen width - min screen width) */
-        );
+    /*        * (100vw - (var(--fluid-type-min-screen-width) * 1rem)) /* multipled by (screen width - min screen width) */
+      /*      / (var(--fluid-type-max-screen-width) - var(--fluid-type-min-screen-width)) /* divided by (max screen width - min screen width) */
+  /*      );
     }
 
     h1 {
@@ -198,12 +198,12 @@ blockquote {
 /* Specificity time! */
 
 /* Set max line lengths */
-p, li {
+/*p, li {
     max-width: 60ch;
 }
 
 /* An image that directly follows a h2 is our hero image */
-h2 + p {
+/*h2 + p {
     --rhythm: 2.2rem;
 
     max-width: unset;
@@ -225,7 +225,7 @@ h2 + p img {
 }
 
 /* Style the datate and author bit */
-h1 + p {
+/*h1 + p {
     font-weight: 300;
     line-height: 1.2;
     font-size: 1.4rem;
