@@ -155,8 +155,7 @@ blockquote {
     /* Look, Ma: fluid type with vanilla CSS 😱*/
     /* Note for those interested. I multiply by 1rem to essentially stick a rem unit to a number.
         A bit hacky, but I'm trying to emulate what I would do with this #{} in Sass  */
-    /*      font-size: calc(
-            (var(--heading-min-size) * 1rem) + (var(--heading-max-size) - var(--heading-min-size)) /* min font size + (max font size - min font size) */
+    font-size: calc( (var(--heading-min-size) * 1rem) + (var(--heading-max-size) - var(--heading-min-size))/* min font size + (max font size - min font size) */
     /*        * (100vw - (var(--fluid-type-min-screen-width) * 1rem)) /* multipled by (screen width - min screen width) */
     /*      / (var(--fluid-type-max-screen-width) - var(--fluid-type-min-screen-width)) /* divided by (max screen width - min screen width) */
     /*      );
