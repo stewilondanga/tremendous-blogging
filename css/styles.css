@@ -143,11 +143,10 @@ blockquote {
   color: var(--background);
 }
 
-/*::-moz-selection {
-    background: var(--highlight);
-    color: var(--background);
+::-moz-selection {
+  background: var(--highlight);
+  color: var(--background);
 }
-
 
 /* General responsive adjustments */
 
