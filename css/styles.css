@@ -2,8 +2,9 @@
 
 :root {
   /* Metrics */
-  /*  --rhythm: 1.5rem;
-    --fluid-type-min-screen-width: 40; /* rems */
+  --rhythm: 1.5rem;
+  --fluid-type-min-screen-width: 40;
+  /* rems */
   /*--fluid-type-max-screen-width: 60; /* rems */
   /* Colors */
   /*  --background: #304682;
