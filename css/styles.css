@@ -93,16 +93,16 @@ h1 {
   /* I know, I'm cheating ;) */
 }
 
-/*h1:after {
-    content: "";
-    display: block;
-    max-width: 80%;
-    height: 3px;
-    background: var(--border);
-    margin-top: 1rem;
+h1:after {
+  content: "";
+  display: block;
+  max-width: 80%;
+  height: 3px;
+  background: var(--border);
+  margin-top: 1rem;
 }
 
-h2 {
+/*h2 {
     --heading-min-size: 1.8;
     --rhythm: 4.5rem;
 }
