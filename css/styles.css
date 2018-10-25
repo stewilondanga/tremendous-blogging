@@ -4,6 +4,19 @@ html {
   font-size: 16px;
 }
 
+body {
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 60rem;
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  background: var(--background);
+  color: var(--text);
+}
+
 /* Global vars */
 
 :root {
@@ -77,18 +90,6 @@ body>*+* {
 
 
 
-body {
-    padding: 3rem 2rem;
-    width: 100%;
-    max-width: 60rem;
-    overflow-x: hidden;
-    margin: 0 auto;
-    font-family: Georgia, serif;
-    font-size: 1.3rem;
-    line-height: 1.7;
-    background: var(--background);
-    color: var(--text);
-}
 
 h1, h2, h3 {
     --heading-min-size: 1.75;
